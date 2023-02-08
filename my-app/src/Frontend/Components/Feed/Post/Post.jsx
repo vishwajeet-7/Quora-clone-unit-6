@@ -1,81 +1,35 @@
 import React from 'react'
 import Avatar from '../../Avatar/Avatar'
 import './Post.css'
-import FileUploadSharpIcon from '@mui/icons-material/FileUploadSharp';
-import DownloadSharpIcon from '@mui/icons-material/DownloadSharp';
-import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
-import ShareIcon from '@mui/icons-material/Share';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import PostHead from './PostHead/PostHead';
+import PostMid from './PostMid/PostMid';
 const Post = () => {
   return (
-    <div className='post'>
+    <div className='post main'>
         <div className='post__info'>
-            <Avatar/>
-            <h4>User name</h4>
-            <small>TimeStamp</small>
+            <PostHead/>
         </div>
         <div className='post__body'>
-            <div className='post__question'>
-                <p>This is test Question</p>
-                <button className='post__btnAnswer'>Answer</button>
-            </div>
+            <PostMid/>
         </div>
         <div className='post__footer'>
             <div className='post__footerAction'>
-                <FileUploadSharpIcon/>
-                <DownloadSharpIcon/>
-            </div>
-            <ChatBubbleOutlineOutlinedIcon/>
-            <ShareIcon/>
-            <div>
-                <MoreHorizIcon/>
-            </div>
-        </div>
-        <p
-        style={{
-            color:"rgba(0,0,0,0.5)",
-            fontSize: "12px",
-            fontWeight: "bold",
-            margin: "10px 0px"
-        }}
-        >50 Answers</p>
-        <div className='post__answer'
-        style={{
-            margin:"5px 0px 0px 0px",
-            padding:"5px 0px 0px 20px",
-            borderTop: "1px solid lightgray"
-        }}
-        >
-            <div className='post-answer-container'
-            style={{
-                display:"flex",
-                alignItems: "center",
-                flexDirection:"column",
-                width: "100%",
-                padding: "10px 5px ",
-                borderTop:"1px solid lightgray",
-            }}
-            >
-                <div className='post-answered'
-                style={{
-                    display:"flex",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                    fontSize: "12px",
-                    color: "#888"
-                }}
-                >
-                    <Avatar/>
-                    <div className='post-info'
-                    style={{
-                        margin: "0px 10px",
-                    }}
-                    >
-                        <p>Username</p>
-                        <span>Time Stamp</span>
-                    </div>
+                <div>
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 4 3 15h6v5h6v-5h6z" class="icon_svg-stroke icon_svg-fill" stroke-width="1.5" stroke="#666" fill="none" stroke-linejoin="round"></path></svg>
                 </div>
-                <div className='post-answer'>This is test answer</div>
+                <div>
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 20 9-11h-6V4H9v5H3z" class="icon_svg-stroke icon_svg-fill" stroke="#666" fill="none" stroke-width="1.5" stroke-linejoin="round"></path></svg>
+                </div>
+                <div>
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.071 18.86c4.103 0 7.429-3.102 7.429-6.93C19.5 8.103 16.174 5 12.071 5s-7.429 3.103-7.429 6.93c0 1.291.379 2.5 1.037 3.534.32.501-1.551 3.058-1.112 3.467.46.429 3.236-1.295 3.803-.99 1.09.585 2.354.92 3.701.92Z" class="icon_svg-stroke icon_svg-fill" stroke="#666" stroke-width="1.5" fill="none"></path></svg>
+                </div>
+                <div>
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g class="icon_svg-stroke" stroke="#666" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M19.748 10a8.003 8.003 0 0 0-15.496.002m.001 4.003a8.003 8.003 0 0 0 15.494 0"></path><path d="m2.5 7.697 1.197 3.289 3.289-1.197m14.5 6.5L20.289 13 17 14.197"></path></g></svg>
+                </div>
+            </div>           
+            <div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.25 11.25a1.06 1.06 0 1 0 1.5 1.5 1.06 1.06 0 0 0-1.5-1.5Zm-7 0a1.06 1.06 0 1 0 1.5 1.5 1.06 1.06 0 0 0-1.5-1.5Zm14 0a1.06 1.06 0 1 0 1.5 1.5 1.06 1.06 0 0 0-1.5-1.5Z" class="icon_svg-stroke" fill="#666" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
             </div>
         </div>
     </div>

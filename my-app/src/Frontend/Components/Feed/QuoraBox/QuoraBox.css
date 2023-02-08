@@ -1,26 +1,76 @@
 .quoraBox{
     display: flex;
     padding: 10px;
-    border: 1px solid lightgray;
+    border: 1px solid #d9dbe0;
     background-color: white;
     border-radius: 5px;
     cursor: pointer;
     width: 700px;
+    box-sizing: border-box;
+    position: relative;
 }
 .quoraBox:hover{
     border: 1px solid rgb(175, 175, 175);
 }
 .quoraBox__info{
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+}
+.quoraBox_wrap{
+    box-sizing: border-box;
     display: flex;
-    align-items: center;
+}
+.quoraBox_text{
+    width: 600px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    background-color: #f0efef;
+}
+.quoraBox_textwrap{
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    color: #b7b5b5;
 }
 .quoraBox__quora{
     display: flex;
-    margin-top: 10px;
+    justify-content: space-around;
 }
-.quoraBox__quora > h5{
-    color: rgb(129, 129, 129);
-    font-weight: 400;
-    margin-left: 10px;
-    font-size: large;
+.q-box{
+    box-sizing: border-box;
+    border-right-style: solid;
+    border-width: 2px;
+    border-color: #868789;
+    height: 16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 16px;
+}
+.quoraBottom{
+    display: flex;
+    margin: 17px 0px 0px 0px;
+    gap: 0.5rem;
+    border-radius: 15px;
+    width: 15%;
+    justify-content: center;
+    color: var(--blue);
+}
+.quoraText{
+    font-size: 14px;
+    color: #868789;
+    margin-top: 3px;
+}
+.quoraText:hover{
+    color: var(--blue);
+}
+.quoraBottom:hover{
+    background-color: var(--lightgrey);
+}
+path:hover{
+    fill: var(--red);
 }

@@ -1,0 +1,27 @@
+.mid{
+    border: none;
+}
+.question{
+    margin-top: 5px;
+}
+.question:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.body{
+    color: var(--darkGray);
+    margin-top: -9px;
+}
+.img{
+    margin-top: -4px;
+}
+.info{
+    margin-top: -4px;
+    display: flex;
+    display: flex;
+    gap: 1rem;
+}
+.info>div>span{
+    color: var(--darkGray);
+    font-size: 14px;
+}

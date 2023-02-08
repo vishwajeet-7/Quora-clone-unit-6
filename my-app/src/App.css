@@ -22,3 +22,13 @@ button:focus{
   --vp: 0.052vw;
   --vm: 0.278vw;
 }
+:root
+{
+  --grey: #838485;
+  --red: #b92b27;
+  --blue: #3a72ff;
+  --lightRed: #f1817e;
+  --black: #282829;
+  --darkGray: #535354;
+  --lightgrey:#d9dbe0;
+}

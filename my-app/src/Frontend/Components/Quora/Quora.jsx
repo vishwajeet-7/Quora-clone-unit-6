@@ -11,9 +11,11 @@ const Quora = () => {
       <QuoraHeader/>
       <div className='quora__contents'>
         <div className='quora__content'>
+          <div className='fixed'>
             <Sidebar/>
-            <Feed/>
-            <Widgets/>
+          </div>
+          <Feed/>
+          <Widgets/>
         </div>
       </div>
     </div>

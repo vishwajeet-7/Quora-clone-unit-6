@@ -65,7 +65,7 @@ const QuoraHeader = () => {
                 </div>
             </div>
             <div className='qHeader-Rem'>
-                <div className='qHeader_rem'>
+                <div className='qHeader-rem'>
                     <button>Try Quora+</button>
                 </div>
                 <div className='qHeader-rem'>
@@ -77,7 +77,7 @@ const QuoraHeader = () => {
                     </svg>
                 </div>
                 <div className='qHeader-rem'>
-                    <button>
+                    <button className='last'>
                         <div>
                             <div>Add Questions</div>
                         </div>

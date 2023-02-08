@@ -5,7 +5,7 @@
     padding: 1px;
     background-color: white;
     width: 100%;
-  
+    height: 60px;
     position: sticky;
     z-index: 1000;
     top: 0;
@@ -18,9 +18,10 @@
   .qHeader-logo {
     height: 30px;
     margin-right: 20px;
+    margin-bottom: 20px;
   }
   .qHeader-logo>svg{
-    fill: #b92b27;
+    fill: var(--red);
   }
   .qHeader_icons {
     display: flex;
@@ -35,12 +36,18 @@
     padding: 5px;
     border-radius: 5px;
     margin-left: 5px;
+    width: 280px;
+    height: 40px;
+  }
+  .qHeader_input:hover{
+    border: 1px solid var(--blue);
   }
   .qHeader_input > input {
     background-color: transparent;
     outline: none;
     border: none;
     color: rgb(49, 49, 49);
+    margin-left: 10px;
   }
   .qHeader-rem > img{
     cursor: pointer;
@@ -55,4 +62,17 @@
   }
   .qHeader-Rem{
     display: flex;
+  }
+  .qHeader-rem>button{
+    padding: 5px 17px;
+    border-radius: 22px;
+    border: 0.1px solid var(--lightgrey);
+  }
+  .last{
+    background-color: var(--red);
+    color: white;
+  }
+  .qHeader_input>div>svg{
+    height: 16px;
+    width: 16px;
   }
