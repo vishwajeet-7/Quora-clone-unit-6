@@ -1,0 +1,100 @@
+.post{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    max-width: 700px;
+    box-shadow: 0px 5px 8px -px solid rgba(0, 0, 0, 0.5);
+}
+.main:hover{
+    border: 1px solid var(--grey);
+}
+.post__info{
+    display: flex;
+    align-items: center;
+}
+.post__info > h4{
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.post__info > h4:hover{
+    text-decoration: underline;
+}
+.post__info> small{
+    margin-left: 10px;
+}
+.post__body{
+    display: flex;
+    flex-direction: column;
+}
+.post__body > .post__question{
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.post__question > .post__btnAnswer{
+    margin-left: auto;
+    cursor: pointer;
+    padding: 7px;
+    background-color: blue;
+    outline: none;
+    border: none;
+    color: lightgray;
+    font-weight: 300;
+    font-size: 14px;
+    border-radius: 33px;
+}
+.post__btnAnswer:hover{
+    text-decoration: underline;
+}
+.post__question>p:hover{
+    text-decoration: underline;
+}
+.post__body>.post__answer>p{
+    margin-bottom: 10px;
+}
+.post__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+.post__footer > .MuiSvgIcon-root {
+    color: gray;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.post__footerAction {
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 33px;
+    gap: 3rem;
+}
+.post__footerAction > .MuiSvgIcon-root {
+    color: gray;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.post__footerAction > .MuiSvgIcon-root:hover {
+    color: rgb(0, 140, 255);
+    margin-right: 40px;
+}
+.post__footerAction>div{
+    border-radius: 10px;
+}
+.post__footerAction>div:hover{
+    background-color: #ded1d1;
+}
+.post__footerAction>div>svg>path:hover{
+    fill: var(--blue);
+}
