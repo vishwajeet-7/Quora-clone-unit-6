@@ -1,0 +1,107 @@
+.Modal_title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.5);
+}
+
+.Modal_title>h5{
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.Modal_title>h5:hover{
+    color: var(--red);
+    text-decoration: underline;
+}
+.modal_info{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.modal_info>p{
+    margin-left: 10px;
+    font-size: small;
+    color: gray;
+}
+.modal_info > .modal_scop{
+    display: flex;
+    align-items: center;
+    color: rgb(98, 98, 98);
+    padding: 5px;
+    margin-left: 10px;
+    background-color: rgb(230,230,230);
+    border-radius: 33px;
+    cursor: pointer;
+}
+.modal_field{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    flex: 1;
+}
+.modal_field>input{
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    border-bottom: var(--blue);
+}
+.modal_field > .modal_fieldLink{
+    color: gray;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.modal_button{
+    display: flex;
+    margin-left: 380px;
+    margin-top: 115px;
+    align-items: center;
+}
+.modal_button > .cancel{
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    color: gray;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal_button > .cancel:hover{
+    color: var(--red);
+}
+.modal_button > .add {
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    background-color: var(--blue);
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 33px;
+    cursor: pointer;
+    width: 50%;
+  }
+  .modal_button > .add:hover{
+    background-color: rgb(88, 204, 246);
+  }
+  .react-responsive-modal-modal{
+    /* width: 90vh;
+    height: 70vh; */
+    border-radius: 8px;
+    min-height: 400px;
+    max-height: 80vh;
+    max-width: 90vw;
+    width: 730px;
+  }
+  .quill{
+    height: 50vh;
+  }
+  .react-responsive-modal-overlay{
+    background: rgb(0 0 0 / 75%);
+  }

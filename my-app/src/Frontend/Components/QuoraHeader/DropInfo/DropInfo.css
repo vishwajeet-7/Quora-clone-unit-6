@@ -1,0 +1,15 @@
+.wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.wrap:hover{
+    background-color: var(--lightgrey);
+}
+.text{
+    color: var(--darkGray)
+}
+.toggle-wrap > span{
+    color: var(--darkGray);
+    font-size: 12px;
+    font-weight: bold;
+}
