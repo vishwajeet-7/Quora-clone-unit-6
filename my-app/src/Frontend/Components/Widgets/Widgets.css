@@ -4,3 +4,9 @@
 .add-box{
     margin-bottom: 15px;
 }
+.add-text{
+    text-align: center;
+}
+.add-text>p{
+    color: var(--darkGray);  
+}

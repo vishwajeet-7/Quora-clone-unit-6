@@ -11,7 +11,7 @@ const PostMid = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ullam exercitationem ratione dolorum praesentium, culpa esse voluptas voluptatem, distinctio cumque temporibus fuga iure! Magnam ut alias quia qui consectetur facilis.
       </div>
       <div className='post mid img'>
-        <img src="https://qph.cf2.quoracdn.net/main-qimg-f0608c48f1cc70047a81038a1162f494-lq" alt="img" />
+        <img src="https://qph.cf2.quoracdn.net/main-qimg-29a800eb5ad9280c09aaf9590ed67d4a-lq" alt="img" />
       </div>
       <div className='mid info'>
         <div><span>96 views</span></div>
