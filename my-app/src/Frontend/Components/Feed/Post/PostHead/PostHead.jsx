@@ -1,17 +1,22 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import Avatar from '../../../Avatar/Avatar'
 import './PostHead.css'
 
 const PostHead = () => {
+  const theme = useSelector((store)=> store.theme)
+  const style = theme==='dark' ? {color:"var(--lightgrey)"} : {};
   return (
-    <div className='postHead'>
+    <div className='postHead' style={theme==="dark" ? {backgroundColor:"var(--darkComp)", border: "none"} : {}}>
       <div className='avatar'>
         <Avatar/>
       </div>
       <div className='content'>
         <div className='content-up'>
             <div className='content-up text'>
-              <h5>Vishwajeet Singh</h5>
+              <h5
+              style={style}
+              >Vishwajeet Singh</h5>
               <span>Follow</span>
             </div>
             <div className='content-remove'>

@@ -4,9 +4,11 @@ import './Post.css'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import PostHead from './PostHead/PostHead';
 import PostMid from './PostMid/PostMid';
+import { useSelector } from 'react-redux';
 const Post = () => {
+    const theme = useSelector((store)=> store.theme)
   return (
-    <div className='post main'>
+    <div className='post main' style={theme==="dark" ? {backgroundColor:"var(--darkComp)", border: "none"} : {}}>
         <div className='post__info'>
             <PostHead/>
         </div>
