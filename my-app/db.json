@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Indian fruit contains all kinds of vitamins?",
+      "no_of_answers": 3,
+      "last_followed": "1h",
+      "followed_by": 1,
+      "answers": []
+    },
+    {
+      "id": 2,
+      "question": "Which country is famous for hockey?",
+      "no_of_answers": 0,
+      "last_followed": "15m",
+      "followed_by": 2,
+      "answers": []
+    },
+    {
+      "id": 3,
+      "question": "What is the scope of machine learning in the future?",
+      "no_of_answers": 43,
+      "last_followed": " Oct 11",
+      "followed_by": 52,
+      "answers": []
+    },
+    {
+      "id": 4,
+      "question": "Which keto diet is the best? Is Keto diet really helpful?",
+      "no_of_answers": 4,
+      "last_followed": "Dec 31",
+      "followed_by": 1,
+      "answers": []
+    },
+    {
+      "id": 5,
+      "question": "What happens if you don't update your Android smartphone?",
+      "no_of_answers": 1,
+      "last_followed": "2h",
+      "followed_by": 0,
+      "answers": []
+    },
+    {
+      "id": 6,
+      "question": "What is Google, and who made it?",
+      "no_of_answers": 0,
+      "last_followed": "1h",
+      "followed_by": 1,
+      "answers": []
+    },
+    {
+      "id": 7,
+      "question": "What are the benefits of playing pickle ball over tennis?",
+      "no_of_answers": 2,
+      "last_followed": "5h",
+      "followed_by": 1,
+      "answers": []
+    },
+    {
+      "id": 8,
+      "question": "Why do people not ask questions before they or their family get impacted?",
+      "no_of_answers": 2,
+      "last_followed": "5h",
+      "followed_by": 1,
+      "answers": []
+    },
+    {
+      "id": 9,
+      "question": "Which is the best platform for earning money online in 2023, YouTube or Quora?",
+      "no_of_answers": 1,
+      "last_followed": "2h",
+      "followed_by": 1,
+      "answers": []
+    },
+    {
+      "id": 10,
+      "question": "What are the benefits of yoga at home?",
+      "no_of_answers": 0,
+      "last_followed": "2h",
+      "followed_by": 1,
+      "answers": []
+    }
+  ]
+}

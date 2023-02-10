@@ -5,6 +5,7 @@ import { questions } from "../../../Api/Url";
 import answerThunkActionCreater from "../../../Redux/Answer/answerThunkAction";
 import Question from "../Question/Question";
 import StarIcon from "@mui/icons-material/Star";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 function Answer() {
   const dispatch = useDispatch();
   const data = useSelector((storeData) => {
@@ -18,7 +19,7 @@ function Answer() {
     <div className={styles.middle}>
       <div className={styles.heading}>
         <span>
-          <i class="fa-duotone fa-star"></i>
+          <StarIcon style={{ backgroundColor: "#b92b27", color: "white" }} />
         </span>
         <p>Questions for you</p>
       </div>
@@ -37,9 +38,8 @@ function Answer() {
         })}
       </div>
       <div className={styles.moreDiv}>
-        <div>
-          More <i class="fa-solid fa-angle-down"></i>
-        </div>
+        <div>More</div>
+        <ExpandMoreIcon />
       </div>
       <div className={styles.addTopics}>
         <div>
