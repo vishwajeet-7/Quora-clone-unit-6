@@ -1,10 +1,11 @@
-import Quora from './Frontend/Components/Quora/Quora';
-import './App.css';
-
+import "./App.css";
+import AnswerParent from "./Frontend/Components/AnswerPage/AnswerParent/AnswerParent";
+// import Allroutes from "./Component/Allroutes";
 function App() {
   return (
     <div className="App">
-      <Quora/>
+      {/* <Allroutes /> */}
+      <AnswerParent />
     </div>
   );
 }
