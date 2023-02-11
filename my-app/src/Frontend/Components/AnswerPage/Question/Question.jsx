@@ -13,9 +13,6 @@ export default function Question({
 }) {
   return (
     <div className={styles.Question}>
-      <i class="fa-solid fa-xmark"></i>
-      <i class="fa-solid fa-arrow-down"></i>
-      <i class="fa-solid fa-ellipsis"></i>
       <h3>
         <Link to={`${id}`}>{question}</Link>
       </h3>
@@ -48,6 +45,7 @@ export default function Question({
           >
             Follow
             <FollowTheSignsIcon />
+            <span>{followed_by}</span>
           </div>
         </button>
         <button>
