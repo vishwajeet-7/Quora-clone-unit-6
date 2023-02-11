@@ -12,22 +12,22 @@ export default function PopupGfg() {
                 modal nested>
                 {
                     close => (
-                        <div className='modal'>
+                        <div className='modal' style={{}}>
                              <div>
                                 <button style={{border:'none',backgroundColor:'white'}} onClick=
                                     {() => close()}>
                                         ☓
                                 </button>
                             </div>
-                            <div className='content'>
-                              <div style={{padding:'20px'}}><h3>Create a Space</h3>
+                            <div className='content' style={{padding:'30px'}}>
+                              <div ><h3>Create a Space</h3>
                               <p>Share your interests, curate content, host discussions, and more.</p>
-                             
-                            <label >Name<span style={{color:'red'}} >*</span> </label>
+                             <br />
+                            <label >Name<span style={{color:'red'}} >*</span> </label><br />
                             <p style={{font:"small-caption"}}>This can be changed in Space settings.</p>
                             <input style={{width:'500px',height:'30px'}} type="text" placeholder='Your Space Is Here' />
-<br />
-                            <label >Brief description</label>
+<br /><br />
+                            <label >Brief description</label><br />
                             <p style={{font:"small-caption"}}>Include a few keywords to show people what to expect if they join.</p>
                             <input style={{width:'500px',height:'30px'}} type="text"  />
                              <button style={{color:'white',backgroundColor:'blue',border:'none',padding:'5px',width:'80px',height:'35px',borderRadius:'15px',fontWeight:'bold',margin:'20px 500px 0 0'}}>Create</button>
