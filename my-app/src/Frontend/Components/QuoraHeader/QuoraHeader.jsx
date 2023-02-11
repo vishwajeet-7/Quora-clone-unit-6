@@ -6,16 +6,15 @@ import 'react-responsive-modal/styles.css'
 import AddQuestions from './AddQuestions'
 import Dropdown from './Dropdown/Dropdown'
 import DropTop from './DropTop/DropTop'
-import ExpandMore from '@material-ui/icons/ExpandMore'
 import DropInfo from './DropInfo/DropInfo'
 import Toggle from './Toggle/Toggle'
-import { handleTheme } from '../../Redux/Actions/Action'
+import { closeModal, handleTheme, openModal } from '../../Redux/Actions/Action'
 import { useDispatch, useSelector } from 'react-redux'
 
 
 
 const QuoraHeader = () => {
-    const [isModalOpen,setIsModalOpen] = useState(false);
+    const isModalOpen = useSelector((store)=>store.isModal)
     const dispatch = useDispatch();
     const theme = useSelector((store)=> store.theme);
     const [open,setOpen] = useState(false)
@@ -171,7 +170,7 @@ const QuoraHeader = () => {
                 </div>
                 <div className='qHeader-rem'>
                     <button className='last' 
-                    onClick={()=>setIsModalOpen(true)}
+                    onClick={()=>dispatch(openModal(true))}
                     
                     style={theme==='dark' ? {backgroundColor:"red"} : {backgroundColor: "var(--red)"}}
                     
@@ -181,7 +180,7 @@ const QuoraHeader = () => {
                     <Modal
                     open={isModalOpen}
                     closeIcon = {Close}
-                    onClose={()=>setIsModalOpen(false)}
+                    onClose={()=>dispatch(closeModal(false))}
                     closeOnEsc
                     center
                     closeOnOverlayClick={false}
@@ -191,7 +190,7 @@ const QuoraHeader = () => {
                         }
                     }}
                     >
-                        <AddQuestions setIsModalOpen={setIsModalOpen}/>
+                        <AddQuestions />
                     </Modal>
                 </div>
             </div>
