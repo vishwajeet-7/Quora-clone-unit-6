@@ -9,10 +9,16 @@
     background-color: rgba(0, 0, 0, 0.05);
     min-width: fit-content;
     width: 100%;
+    position: relative;
+    right: 40px;
 }
 .quora__content{
     display: flex;
     gap: 2rem;
     flex-direction: row;
     padding: 0px 10px;
+}
+.fixed{
+    position: fixed;
+    left: 170px;
 }

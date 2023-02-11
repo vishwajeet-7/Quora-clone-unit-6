@@ -1,4 +1,6 @@
 .add{
+    position: fixed;
+    right: 130px;
     margin-left: 35px;
 }
 .add-box{
