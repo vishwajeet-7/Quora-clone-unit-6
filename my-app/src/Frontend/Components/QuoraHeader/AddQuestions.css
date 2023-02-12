@@ -85,7 +85,8 @@
     padding: 10px;
     border-radius: 33px;
     cursor: pointer;
-    width: 50%;
+    width: 9%;
+    left: 55rem
   }
   .modal_button > .add:hover{
     background-color: rgb(88, 204, 246);

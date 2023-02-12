@@ -3,8 +3,11 @@ import Avatar from '../Avatar/Avatar'
 import Public from '@material-ui/icons/PeopleAltOutlined'
 import Expand from '@material-ui/icons/ExpandMore'
 import './AddQuestions.css'
+import { closeModal } from '../../Redux/Actions/Action'
+import { useDispatch } from 'react-redux'
 
-const AddQuestions = ({setIsModalOpen}) => {
+const AddQuestions = () => {
+ const dispatch = useDispatch()
 
   return (
     <div className='modal_wrap'>
@@ -25,7 +28,7 @@ const AddQuestions = ({setIsModalOpen}) => {
           <input type="text" placeholder='Optional iclude a link that gives context'/>
       </div>
       <div className='modal_button'>
-        <button className='cancel' onClick={()=>setIsModalOpen(false)}>Cancel</button>
+        <button className='cancel' onClick={()=>dispatch(closeModal(false))}>Cancel</button>
         <button type='submit' className='add'
         >Add Question</button>
       </div>

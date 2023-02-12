@@ -1,0 +1,24 @@
+.sidefooter{
+    box-sizing: border-box;
+    color: #939598;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 35px;
+}
+.sidefooter> span{
+    color: #939598;
+}
+span>a{
+    box-sizing: border-box;
+    border-radius: inherit;
+    cursor: pointer;
+    color: #939598;
+}
+.sidefooter > div > span{
+    font-size: 12px;
+    margin-left: 5px;
+}
+.sidefooter > div > span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
