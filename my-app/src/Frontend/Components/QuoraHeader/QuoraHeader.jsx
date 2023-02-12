@@ -10,6 +10,7 @@ import DropInfo from "./DropInfo/DropInfo";
 import Toggle from "./Toggle/Toggle";
 import { handleTheme } from "../../Redux/Actions/Action";
 import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 
 const QuoraHeader = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
