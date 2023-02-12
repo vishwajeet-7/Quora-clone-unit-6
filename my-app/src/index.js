@@ -9,8 +9,9 @@ import {store} from '../src/Frontend/Redux/Store/store'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
- 
-    <App />
+ <Provider store={store}>
+     <App />
+ </Provider>
 
 );
 

@@ -5,15 +5,16 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import PostHead from './PostHead/PostHead';
 import PostMid from './PostMid/PostMid';
 import { useSelector } from 'react-redux';
-const Post = () => {
+const Post = ({item}) => {
+    console.log(item);
     const theme = useSelector((store)=> store.theme)
   return (
     <div className='post main' style={theme==="dark" ? {backgroundColor:"var(--darkComp)", border: "none"} : {}}>
         <div className='post__info'>
-            <PostHead/>
+            <PostHead author={item.author} date={item.date} />
         </div>
         <div className='post__body'>
-            <PostMid/>
+            <PostMid question={item.question} answer={item.answer} image={item.image} upvotes={item.upvotes} downvotes={item.downvotes} shares={item.shares}/>
         </div>
         <div className='post__footer'>
             <div className='post__footerAction'>
