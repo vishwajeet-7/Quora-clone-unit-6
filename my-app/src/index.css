@@ -5,6 +5,9 @@
   --secondary-text-color: #cecece;
   --border-radius:8px;
   --speed: 500ms;
+  --darkMode: rgb(13 10 10);
+  --darkComp: #262626;
+  --pathFill:#c7b3b3;
 }
 
 *{

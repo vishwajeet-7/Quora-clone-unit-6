@@ -1,0 +1,110 @@
+.SingleQuestion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  /* background-color: rgba(190, 42, 42, 0.05); */
+  min-width: fit-content;
+  width: 100%;
+}
+
+.questionDiv {
+  width: 50%;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 30px;
+}
+.questionDiv img {
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+}
+.innerDiv {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.innerDiv button {
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: white;
+  margin-right: 10px;
+  margin-top: 5px;
+  color: grey;
+  border: 1px solid grey;
+}
+
+.innerDiv button:hover {
+  background-color: rgb(232, 230, 230);
+  cursor: pointer;
+}
+
+.innerDiv > p {
+  color: grey;
+}
+
+.buttonsDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftButtons button {
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: white;
+  margin-right: 10px;
+  margin-top: 5px;
+  color: grey;
+  border: 1px solid grey;
+}
+
+.leftButtons > button:hover {
+  background-color: rgb(232, 230, 230);
+  cursor: pointer;
+}
+
+.rightButtons button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  margin-right: 10px;
+  margin-top: 5px;
+  color: grey;
+}
+
+.rightButtons > button:hover {
+  background-color: rgb(232, 230, 230);
+  cursor: pointer;
+}
+
+.answers {
+  margin-top: 20px;
+  border-top: 2px solid grey;
+}
+
+.answers i {
+  width: 20px;
+  padding: 10px;
+}
+
+.answers ul {
+  padding: 20px;
+  border-radius: 30px;
+  border: 2px solid gray;
+}
+.answers ul > li {
+  margin: 5px;
+}
+
+.answers > div:last-child > p {
+  font-weight: bold;
+  margin: 10px 0px;
+  text-align: center;
+}
