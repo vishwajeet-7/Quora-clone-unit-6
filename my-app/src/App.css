@@ -1,0 +1,40 @@
+body{
+  margin: 0;
+  font-family: 'Roboto',sans-serif;
+}
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.btn:hover{
+  box-shadow: unset !important;
+}
+input[type="button"]{
+  outline: none !important;
+}
+button::selection{
+  outline: none !important;
+}
+button:focus{
+  outline: none !important;
+}
+:root{
+  --vp: 0.052vw;
+  --vm: 0.278vw;
+}
+:root
+{
+  --grey: #838485;
+  --red: #b92b27;
+  --blue: #3a72ff;
+  --lightRed: #f1817e;
+  --black: #282829;
+  --darkGray: #5e5e61;
+  --lightgrey:#d9dbe0;
+}
+.styleClass{
+  color: var(--lightgrey);
+}
+.styleClass:hover{
+  text-decoration: underline;
+}
