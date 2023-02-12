@@ -18,10 +18,12 @@
   .qHeader-logo {
     height: 30px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
   .qHeader-logo>svg{
     fill: var(--red);
+    width: 90px;
+    height: 90px;
   }
   .qHeader_icons {
     display: flex;
@@ -76,3 +78,195 @@
     height: 16px;
     width: 16px;
   }
+
+  /* Dropdown Css */
+
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  .menu-trigger img{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .dropdown-menu{
+    position: absolute;
+    top: 70px;
+    border: 1px solid var(--lightgrey);
+    right: 340px;
+    background-color: #f8f5f5;
+    border-radius: var(--border-radius);
+    padding: 10px 20px;
+    width: 250px;
+  }
+  .dropdown-menu::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    background: var(--secondary-bg);
+    transform: rotate(45deg);
+  }
+  .dropdown-menu.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--speed);
+  }
+  .dropdown-menu.inactive{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: var(--speed) ease;
+  }
+  h3{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    line-height: 1.2 rem;
+  }
+  
+  h3 span{
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    font-weight: 400;
+  }
+  .dropdown-menu ul li{
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .dropdown-menu ul li:hover{
+    color: rgb(212, 33, 9);
+    cursor: pointer;
+  }
+  .dropdown-menu ul li:hover img{
+    opacity: 1;
+    cursor: pointer;
+  }
+  .dropDown-item{
+    display: flex;
+    margin: 1px auto;
+  }
+  .dropDown-item img{
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 10px;
+    opacity: 1;
+    transition: var(--speed);
+  }
+  .dropDown-item a{
+    max-width: 150px;
+    color: var(--darkGray);
+    margin-left: 15px;
+    transition: var(--speed);
+    font-size: 15px;
+  }
+  .toggle-wrap{
+    border: none !important;
+  }
+  @media only screen and (max-width: 768px){
+    .qHeader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1px;
+      background-color: white;
+      width: 100%;
+      height: 60px;
+      position: sticky;
+      z-index: 1000;
+      top: 0;
+      box-shadow: 0px 5px 8px -9px rgb(7 6 6 / 50%);
+  }
+  .qHeader_input {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 230px;
+    height: 35px;
+}
+    .qHeader-content {
+      display: flex;
+      gap: 0rem;
+  }
+  .qHeader_icons>div:nth-child(2){
+    display: none;
+  }
+  .qHeader_icons>div:nth-child(4){
+    display: none;
+  }
+  .qHeader_icons>div:nth-child(5){
+    display: none;
+  }
+  .qHeader-Rem>div:nth-child(1){
+    display: none;
+  }
+  .qHeader_input > input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(49, 49, 49);
+    margin-left: 10px;
+    font-size: 16px;
+}
+.qHeader-rem > img {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: -50px;
+}
+.toggle-wrap {
+  border-radius: 10px !important;
+  margin-left: 10px !important;
+}
+.qHeader-rem>button {
+  padding: 10px 10px;
+    border-radius: 22px;
+    border: 0.1px solid var(--lightgrey);
+    font-size: 12px;
+}
+}
+@media only screen and (max-width: 400px){
+  .qHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    background-color: white;
+    width: 100%;
+    height: 84px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0px 5px 8px -9px rgb(7 6 6 / 50%);
+}
+.qHeader-logo {
+  height: 36px;
+    margin-right: 34px;
+    margin-bottom: 50px;
+    margin-left: 32px;
+}
+.qHeader_icons>div:nth-child(1){
+  display: none;
+}
+.qHeader_icons>div:nth-child(3){
+  display: none;
+}
+}

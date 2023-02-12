@@ -16,10 +16,11 @@
     margin-top: -4px;
 }
 .info{
-    margin-top: -4px;
+    margin-top: 10px;
     display: flex;
     display: flex;
     gap: 1rem;
+    margin-left: 4px;
 }
 .info>div>span{
     color: var(--darkGray);

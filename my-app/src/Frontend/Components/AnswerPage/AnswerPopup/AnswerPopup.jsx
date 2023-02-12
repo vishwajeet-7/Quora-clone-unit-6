@@ -4,16 +4,20 @@ import styles from "./AnswerPopup.module.css";
 import { useDispatch } from "react-redux";
 import answerThunkActionCreater from "../../../Redux/Answer/answerThunkAction";
 import { questions } from "../../../Api/Url";
+import CloseIcon from "@mui/icons-material/Close";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import AbcIcon from "@mui/icons-material/Abc";
+import FilterIcon from "@mui/icons-material/Filter";
+import InfoIcon from "@mui/icons-material/Info";
 
 export default function AnswerPopup({ ques_id, setAnsPopup }) {
   const dispatch = useDispatch();
   const ansRef = useRef();
   const question = useSelector((storeData) => {
     return storeData.questions.filter((el) => {
-      return el.id == ques_id;
+      return el.id === ques_id;
     });
   });
-  //   console.log(question);
 
   let postAnswer = () => {
     let answers = question[0].answers;
@@ -49,14 +53,14 @@ export default function AnswerPopup({ ques_id, setAnsPopup }) {
           setAnsPopup(false);
         }}
       >
-        <i class="fa-solid fa-xmark"></i>
+        <CloseIcon />
       </span>
       <div
         style={{ display: "flex", alignItems: "center" }}
         className={styles.credentialDiv}
       >
         <img
-          src="https://ca.slack-edge.com/T03BHDQT1GT-U03E83063EF-eca94e08ed07-512"
+          src="https://qsf.cf2.quoracdn.net/-4-images.new_grid.profile_default.png-26-688c79556f251aa0.png"
           alt="avatar"
           style={{ height: "40px", borderRadius: "50%" }}
         />
@@ -69,9 +73,12 @@ export default function AnswerPopup({ ques_id, setAnsPopup }) {
               padding: "5px",
               borderRadius: "20px",
               border: "1px solid grey",
+              display: "flex",
+              alignitems: "center",
+              flexwrap: "wrap",
             }}
           >
-            Choose Credential <i class="fa-solid fa-angle-right"></i>
+            Choose Credential <KeyboardArrowRightIcon />
           </button>
         </div>
       </div>
@@ -88,13 +95,16 @@ export default function AnswerPopup({ ques_id, setAnsPopup }) {
       <div className={styles.bottomDiv}>
         <div>
           <span>
-            <i class="fa-solid fa-a"></i>
+            <AbcIcon />
           </span>
           <span>
-            <i class="fa-regular fa-images"></i>
+            <FilterIcon />
           </span>
         </div>
         <div>
+          <span>
+            <InfoIcon />
+          </span>
           <button onClick={postAnswer}>Post</button>
         </div>
       </div>

@@ -29,6 +29,12 @@ button:focus{
   --blue: #3a72ff;
   --lightRed: #f1817e;
   --black: #282829;
-  --darkGray: #535354;
+  --darkGray: #5e5e61;
   --lightgrey:#d9dbe0;
+}
+.styleClass{
+  color: var(--lightgrey);
+}
+.styleClass:hover{
+  text-decoration: underline;
 }

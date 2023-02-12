@@ -5,7 +5,6 @@ import { questions } from "../../../Api/Url";
 import answerThunkActionCreater from "../../../Redux/Answer/answerThunkAction";
 import Question from "../Question/Question";
 import StarIcon from "@mui/icons-material/Star";
-import QuoraHeader from "../../QuoraHeader/QuoraHeader";
 import EditIcon from "@mui/icons-material/Edit";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 function Answer() {
@@ -19,7 +18,6 @@ function Answer() {
   }, [dispatch]);
   return (
     <div className={styles.answerParent}>
-      <QuoraHeader />
       <div className={styles.answerParent__contents}>
         <div className={styles.answerParent__content}>
           {/* left Side of the Page */}

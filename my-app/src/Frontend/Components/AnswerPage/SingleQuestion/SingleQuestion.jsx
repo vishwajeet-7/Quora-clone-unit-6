@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import { useState } from "react";
 import AnswerPopup from "../AnswerPopup/AnswerPopup";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 export default function SingleQuestion({}) {
   const pathParams = useParams();
@@ -12,7 +13,7 @@ export default function SingleQuestion({}) {
 
   const data = useSelector((storeData) => {
     return storeData.questions.filter((el) => {
-      return el.id === pathParams.id;
+      return el.id == pathParams.id;
     });
   });
 
@@ -23,40 +24,44 @@ export default function SingleQuestion({}) {
   return (
     <div className={styles.SingleQuestion}>
       <div className={styles.questionDiv}>
-        <h2>{question.question}</h2>
-        <div className={styles.buttonsDiv}>
-          <div className={styles.leftButtons}>
+        <div
+          style={{ display: "flex", alignItems: "center" }}
+          className={styles.credentialDiv}
+        >
+          <img
+            src="https://qsf.cf2.quoracdn.net/-4-images.new_grid.profile_default.png-26-688c79556f251aa0.png"
+            alt="avatar"
+            style={{ width: "50px", borderRadius: "50%" }}
+          />
+          <div style={{ padding: "10px", borderRadius: "20px" }}>
+            <h4>Username</h4>
             <button
-              onClick={() => {
-                setAnsPopup(true);
+              style={{
+                backgroundColor: "white",
+                color: "grey",
+                padding: "5px",
+                borderRadius: "20px",
+                border: "1px solid grey",
+                display: "flex",
+                alignitems: "center",
+                flexwrap: "wrap",
               }}
             >
-              Answer
-            </button>
-            <button>Follow</button>
-            <button>Request</button>
-          </div>
-          <div className={styles.rightButtons}>
-            <button>
-              <i class="fa-solid fa-circle-info"></i>
-            </button>
-            <button>
-              <i class="fa-regular fa-comment"></i>
-            </button>
-            <button>
-              <i class="fa-solid fa-down-long"></i>
-            </button>
-            <button>
-              <i class="fa-solid fa-ellipsis"></i>
+              Choose Credential <KeyboardArrowRightIcon />
             </button>
           </div>
         </div>
+        <b>
+          <h2>{question.question}</h2>
+        </b>
+
+        <div className={styles.buttonsDiv}>
+          <div className={styles.leftButtons}>
+            <button>Follow</button>
+            <button>Request</button>
+          </div>
+        </div>
         <div className={styles.innerDiv}>
-          <img
-            src="https://ca.slack-edge.com/T03BHDQT1GT-U03E83063EF-eca94e08ed07-512"
-            alt="user-avatar"
-          />
-          <p>Mayank, can you answer this question?</p>
           <p>People are searching for an answer to this question.</p>
           <button
             onClick={() => {
@@ -70,14 +75,11 @@ export default function SingleQuestion({}) {
           {data[0].no_of_answers === 0 ? (
             <div>
               <i class="fa-solid fa-pen"></i>
-              <span>
-                This question does not have any answers yet. In the meantime we
-                have included some related questions and answers below.
-              </span>
+              <span>This question does not have any answers yet.</span>
             </div>
           ) : (
             <div>
-              <p>Answers</p>
+              <p>Your Answers</p>
               <ul>
                 {data[0].answers.map((el, i) => {
                   return <li key={i}>{el}</li>;

@@ -31,6 +31,7 @@ export default function Question({
             }}
           >
             <Link to={`${id}`}>Answer</Link>
+
             <RateReviewIcon />
           </div>
         </button>
