@@ -69,6 +69,7 @@
     padding: 5px 17px;
     border-radius: 22px;
     border: 0.1px solid var(--lightgrey);
+    cursor: pointer;
   }
   .last{
     background-color: var(--red);

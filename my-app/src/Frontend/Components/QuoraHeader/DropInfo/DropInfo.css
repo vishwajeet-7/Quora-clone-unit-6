@@ -4,6 +4,7 @@
 }
 .wrap:hover{
     background-color: var(--lightgrey);
+    text-decoration: underline;
 }
 .text{
     color: var(--darkGray)
