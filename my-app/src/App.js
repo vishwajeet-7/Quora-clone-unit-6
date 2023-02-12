@@ -1,10 +1,9 @@
-import Quora from './Frontend/Components/Quora/Quora';
-import './App.css';
-
+import "./App.css";
+import Allroutes from "./Frontend/Routes/Allroutes";
 function App() {
   return (
     <div className="App">
-      <Quora/>
+      <Allroutes />
     </div>
   );
 }

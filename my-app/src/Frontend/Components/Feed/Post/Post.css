@@ -98,3 +98,33 @@
 .post__footerAction>div>svg>path:hover{
     fill: var(--blue);
 }
+
+@media only screen and (max-width: 768px) {
+    .post {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: white;
+        margin-top: 10px;
+        margin-right: 0px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        max-width: 500px;
+        box-shadow: 0px 5px 8px -px solid rgba(0, 0, 0, 0.5);
+    }
+}
+@media only screen and (max-width: 400px){
+    .post {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: white;
+        margin-top: 10px;
+        margin-right: 0px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        max-width: 530px;
+        margin-left: -8px;
+        box-shadow: 0px 5px 8px -px solid rgba(0, 0, 0, 0.5);
+    }
+}

@@ -35,7 +35,7 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 5px;
-    color: #b7b5b5;
+    color: var(--darkGray);
 }
 .quoraBox__quora{
     display: flex;
@@ -73,4 +73,9 @@
 }
 path:hover{
     fill: var(--red);
+}
+@media only screen and (max-width: 768px){
+    .quoraBox{
+        display: none;
+    }
 }
