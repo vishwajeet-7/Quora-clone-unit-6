@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux'
 
 const AddQuestions = () => {
  const dispatch = useDispatch()
+
   return (
     <div className='modal_wrap'>
       <div className='Modal_title'>

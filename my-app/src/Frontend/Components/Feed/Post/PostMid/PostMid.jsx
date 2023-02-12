@@ -25,6 +25,7 @@ const PostMid = () => {
         Next.js also has built-in support for React Router and Redux, two popular libraries for building web applications. This can make development easier and faster, as there is no need to set up and configure these libraries separately.
 
         Finally, Next.js supports hot module reloading, which means that changes made to the code during development will be automatically reflected in the browser, without the need to refresh the page.</PostContent></span>
+
       </div>
       <div className='post mid img'>
         <img src="https://qph.cf2.quoracdn.net/main-qimg-29a800eb5ad9280c09aaf9590ed67d4a-lq" alt="img" />

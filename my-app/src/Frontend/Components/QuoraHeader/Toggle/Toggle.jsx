@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import './Toggle.css'
 import LightModeIcon from '@mui/icons-material/LightMode';
@@ -18,7 +19,7 @@ const Toggle = () => {
     
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Toggle
+export default Toggle;

@@ -1,9 +1,12 @@
+
 import { IS_OPEN, TOGGLE_SUCCESS, MODAL_CLOSE,MODAL_OPEN } from "../ActionTypes/ActionType";
+
 
 let initialState = {
     isOpen: false,
     theme: 'light',
     isModal: false,
+
 }
 
 
@@ -29,6 +32,7 @@ export const reducer = (state=initialState,action)=>{
                 ...state,
                 isModal: action.payload
             })
+
         default: return state;
     }
     
