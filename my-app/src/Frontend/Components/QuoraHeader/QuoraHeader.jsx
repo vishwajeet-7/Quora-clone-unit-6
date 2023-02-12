@@ -249,10 +249,7 @@ const QuoraHeader = () => {
                 <AddQuestions setIsModalOpen={setIsModalOpen} />
               </Modal>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+     </div>
   );
 };
 
