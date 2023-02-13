@@ -14,7 +14,7 @@ let initialState = {
   isError: false,
 };
 
-export const reducer = (state = initialState, action) => {
+export const thinreducer = (state = initialState, action) => {
   switch (action.type) {
     case IS_OPEN:
       return {

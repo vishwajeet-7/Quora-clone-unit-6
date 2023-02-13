@@ -4,7 +4,7 @@ import "./PostMid.css";
 import PostContent from "./PostContent/PostContent";
 
 const PostMid = ({ image, question, answer, upvotes, downvotes, shares }) => {
-  const theme = useSelector((store) => store.theme);
+  const theme = useSelector((store) => store.themereducer.theme);
   const mainStyle = theme === "dark" ? { background: "var(--darkComp)" } : {};
   const style = theme === "dark" ? { color: "var(--lightgrey)" } : {};
   const bodyStyle = theme === "dark" ? { color: "gray" } : {};

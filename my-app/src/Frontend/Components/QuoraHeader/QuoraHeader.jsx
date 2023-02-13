@@ -13,9 +13,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
 const QuoraHeader = () => {
-  const isModalOpen = useSelector((store) => store.isModal);
+  const isModalOpen = useSelector((store) => store.themereducer.isModal);
   const dispatch = useDispatch();
-  const theme = useSelector((store) => store.theme);
+  const theme = useSelector((store) => store.themereducer.theme);
   const [open, setOpen] = useState(false);
   const Close = <CloseIcon />;
   const details = [

@@ -32,7 +32,7 @@
   margin: 10px 0px;
 }
 
-.left h3 {
+.left h1 {
   padding: 10px 0px;
   border-bottom: 1px solid grey;
   margin: 0px;
@@ -104,7 +104,7 @@
   justify-content: space-between;
 }
 
-.addTopics h3 {
+.addTopics h1 {
   margin: 10px 0px;
 }
 

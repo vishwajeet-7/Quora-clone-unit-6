@@ -4,7 +4,7 @@ import Avatar from "../../../Avatar/Avatar";
 import "./PostHead.css";
 
 const PostHead = ({ author, date }) => {
-  const theme = useSelector((store) => store.theme);
+  const theme = useSelector((store) => store.themereducer.theme);
   const style = theme === "dark" ? { color: "var(--lightgrey)" } : {};
   return (
     <div

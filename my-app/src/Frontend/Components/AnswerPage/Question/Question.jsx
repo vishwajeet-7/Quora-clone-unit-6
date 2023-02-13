@@ -13,9 +13,11 @@ export default function Question({
 }) {
   return (
     <div className={styles.Question}>
-      <h3>
-        <Link to={`${id}`}>{question}</Link>
-      </h3>
+      <h1>
+        <b>
+          <Link to={`${id}`}>{question}</Link>
+        </b>
+      </h1>
       <span>
         {no_of_answers === 0 ? "No answers yet" : `Answers ${no_of_answers}`}
       </span>

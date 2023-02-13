@@ -3,7 +3,7 @@ import PostMid from "./PostMid/PostMid";
 import { useSelector } from "react-redux";
 const Post = ({ item }) => {
   console.log(item);
-  const theme = useSelector((store) => store.theme);
+  const theme = useSelector((store) => store.themereducer.theme);
   return (
     <div
       className="post main"
