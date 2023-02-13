@@ -1,0 +1,13 @@
+
+.three_box{
+    display:"flex";
+    margin:"auto";
+}
+.three_box div svg{
+    margin-right: 140px;
+    margin-top: 20px;
+    height: 35px;
+    width: 35px;
+    
+}
+
