@@ -1,81 +1,100 @@
-.quoraBox{
-    display: flex;
-    padding: 10px;
-    border: 1px solid #d9dbe0;
-    background-color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 700px;
-    box-sizing: border-box;
-    position: relative;
+.quoraBox {
+  display: flex !important;
+  padding: 10px !important;
+  border: 1px solid #d9dbe0 !important;
+  background-color: white !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  width: 700px !important;
+  box-sizing: border-box !important;
+  position: relative !important;
 }
-.quoraBox:hover{
-    border: 1px solid rgb(175, 175, 175);
+.quoraBox-dark {
+  display: flex !important;
+  padding: 10px !important;
+  border: var(--lightgrey) !important;
+  background-color: var(--darkComp);
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  width: 700px !important;
+  box-sizing: border-box !important;
+  position: relative !important;
 }
-.quoraBox__info{
-    box-sizing: border-box;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 12px;
+.quoraBox:hover {
+  border: 1px solid rgb(175, 175, 175) !important;
 }
-.quoraBox_wrap{
-    box-sizing: border-box;
-    display: flex;
+.quoraBox__info {
+  box-sizing: border-box !important;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  padding-top: 12px !important;
 }
-.quoraBox_text{
-    width: 600px;
-    border: 1px solid gray;
-    border-radius: 25px;
-    margin-left: 20px;
-    margin-bottom: 2px;
-    background-color: #f0efef;
+.quoraBox_wrap {
+  box-sizing: border-box !important;
+  display: flex !important;
 }
-.quoraBox_textwrap{
-    box-sizing: border-box;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 5px;
-    color: var(--darkGray);
+.quoraBox_text {
+  width: 600px !important;
+  border: 1px solid gray !important;
+  border-radius: 25px !important;
+  margin-left: 20px !important;
+  margin-bottom: 2px !important;
+  background-color: #f0efef !important;
 }
-.quoraBox__quora{
-    display: flex;
-    justify-content: space-around;
+.quoraBox_text-dark {
+  width: 600px !important;
+  border: "none";
+  border-radius: 25px !important;
+  margin-left: 20px !important;
+  margin-bottom: 2px !important;
+  background-color: var(--darkMode);
 }
-.q-box{
-    box-sizing: border-box;
-    border-right-style: solid;
-    border-width: 2px;
-    border-color: #868789;
-    height: 16px;
-    margin-left: 4px;
-    margin-right: 4px;
-    margin-top: 16px;
+.quoraBox_textwrap {
+  box-sizing: border-box !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  margin-top: 5px !important;
+  color: var(--darkGray) !important;
 }
-.quoraBottom{
-    display: flex;
-    margin: 17px 0px 0px 0px;
-    gap: 0.5rem;
-    border-radius: 15px;
-    width: 15%;
-    justify-content: center;
-    color: var(--blue);
+.quoraBox__quora {
+  display: flex !important;
+  justify-content: space-around !important;
 }
-.quoraText{
-    font-size: 14px;
-    color: #868789;
-    margin-top: 3px;
+.q-box {
+  box-sizing: border-box !important;
+  border-right-style: solid !important;
+  border-width: 2px !important;
+  border-color: #868789 !important;
+  height: 16px !important;
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+  margin-top: 16px !important;
 }
-.quoraText:hover{
-    color: var(--blue);
+.quoraBottom {
+  display: flex !important;
+  margin: 17px 0px 0px 0px !important;
+  gap: 0.5rem !important;
+  border-radius: 15px !important;
+  width: 15% !important;
+  justify-content: center !important;
+  color: var(--blue) !important;
 }
-.quoraBottom:hover{
-    background-color: var(--lightgrey);
+.quoraText {
+  font-size: 14px !important;
+  color: #868789 !important;
+  margin-top: 3px !important;
 }
-path:hover{
-    fill: var(--red);
+.quoraText:hover {
+  color: var(--blue) !important;
 }
-@media only screen and (max-width: 768px){
-    .quoraBox{
-        display: none;
-    }
+.quoraBottom:hover {
+  background-color: var(--lightgrey) !important;
+}
+path:hover {
+  fill: var(--red) !important;
+}
+@media only screen and (max-width: 768px) {
+  .quoraBox {
+    display: none !important;
+  }
 }

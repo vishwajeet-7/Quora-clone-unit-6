@@ -5,41 +5,37 @@ import Modal from "react-responsive-modal";
 import AddQuestions from "../../QuoraHeader/AddQuestions";
 import CloseIcon from "@material-ui/icons/Close";
 import { useState } from "react";
-import { useSelector } from "react-redux";
+
+import { useDispatch, useSelector } from "react-redux";
+import { closeModal, openModal } from "../../../Redux/Actions/Action";
 const QuoraBox = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const dispatch = useDispatch();
   const theme = useSelector((store) => store.themereducer.theme);
-  const [open, setOpen] = useState(false);
   const style = theme === "dark" ? { fill: "var(--pathFill)" } : {};
   const textStyle = theme === "dark" ? { color: "var(--lightgrey)" } : {};
   const Close = <CloseIcon />;
+  const className = theme === "dark" ? "quoraBox-dark" : "quoraBox";
+  const text = theme === "dark" ? "quoraBox_text-dark" : "quoraBox_text";
   return (
-    <div
-      className="quoraBox"
-      style={
-        theme === "dark"
-          ? { backgroundColor: "var(--darkComp)", border: "none" }
-          : {}
-      }
-    >
+    <div className={className}>
       <div className="quoraBox__info">
         <div className="quoraBox_wrap">
           <Avatar />
-          <div
-            className="quoraBox_text"
-            style={
-              theme === "dark"
-                ? { backgroundColor: "var(--darkMode)", border: "none" }
-                : {}
-            }
-          >
-            <div className="quoraBox_textwrap">
+          <div className={text}>
+            <div
+              className="quoraBox_textwrap"
+              onClick={() => dispatch(openModal(true))}
+            >
               <span>What do you want to ask or share?</span>
             </div>
           </div>
         </div>
         <div className="quoraBox__quora">
-          <div className="quoraBottom" onClick={() => setIsModalOpen(true)}>
+          <div
+            className="quoraBottom"
+            onClick={() => dispatch(openModal(true))}
+          >
             <div className="quoraIcon">
               <svg
                 width="24"
@@ -68,7 +64,7 @@ const QuoraBox = () => {
             <Modal
               open={isModalOpen}
               closeIcon={Close}
-              onClose={() => setIsModalOpen(false)}
+              onClose={() => dispatch(closeModal(false))}
               closeOnEsc
               center
               closeOnOverlayClick={false}
@@ -78,7 +74,7 @@ const QuoraBox = () => {
                 },
               }}
             >
-              <AddQuestions setIsModalOpen={setIsModalOpen} />
+              <AddQuestions />
             </Modal>
           </div>
           <div className="q-box"></div>

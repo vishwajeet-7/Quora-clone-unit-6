@@ -5,16 +5,16 @@ import PostContent from "./PostContent/PostContent";
 
 const PostMid = ({ image, question, answer, upvotes, downvotes, shares }) => {
   const theme = useSelector((store) => store.themereducer.theme);
-  const mainStyle = theme === "dark" ? { background: "var(--darkComp)" } : {};
+  const mainStyle = theme === "dark" ? "question-dark" : "question";
   const style = theme === "dark" ? { color: "var(--lightgrey)" } : {};
   const bodyStyle = theme === "dark" ? { color: "gray" } : {};
   return (
     <div className="postmid">
-      <div className="post mid question" style={mainStyle}>
+      <div className={`post mid ${mainStyle}`}>
         <h4 style={style}>{question}</h4>
       </div>
-      <div className="post mid body" style={mainStyle}>
-        <span style={bodyStyle}>
+      <div className="post mid body">
+        <span>
           <PostContent limit={200}>{answer}</PostContent>
         </span>
       </div>

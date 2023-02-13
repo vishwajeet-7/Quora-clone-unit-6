@@ -11,12 +11,15 @@ import Toggle from "./Toggle/Toggle";
 import { closeModal, handleTheme, openModal } from "../../Redux/Actions/Action";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import PaymentPage from "../PaymentPage/PaymentPage";
 
 const QuoraHeader = () => {
   const isModalOpen = useSelector((store) => store.themereducer.isModal);
   const dispatch = useDispatch();
   const theme = useSelector((store) => store.themereducer.theme);
   const [open, setOpen] = useState(false);
+  const [payOpen, setPayOpen] = useState(false);
+
   const Close = <CloseIcon />;
   const details = [
     {
@@ -180,7 +183,7 @@ const QuoraHeader = () => {
           </svg>
         </div>
         <div className="qHeader_icons">
-          <NavLink to="/">
+          <NavLink activeClassName="active" to="/">
             <div className="qHeader_icon">
               <svg
                 width="28"
@@ -195,7 +198,7 @@ const QuoraHeader = () => {
               </svg>
             </div>
           </NavLink>
-          <NavLink to="/following">
+          <NavLink activeClassName="active" to="/following">
             <div className="qHeader_icon">
               <svg
                 width="28"
@@ -238,7 +241,7 @@ const QuoraHeader = () => {
               </svg>
             </div>
           </NavLink>
-          <NavLink to="/answer">
+          <NavLink activeClassName="active" to="/answer">
             <div className="qHeader_icon">
               <svg
                 width="28"
@@ -261,7 +264,7 @@ const QuoraHeader = () => {
               </svg>
             </div>
           </NavLink>
-          <NavLink to="/spaces">
+          <NavLink activeClassName="active" to="/spaces">
             <div className="qHeader_icon">
               <svg
                 width="28"
@@ -351,9 +354,25 @@ const QuoraHeader = () => {
                     }
                   : { backgroundColor: "white" }
               }
+              onClick={() => setPayOpen(true)}
             >
               Try Quora+
             </button>
+            <Modal
+              open={payOpen}
+              closeIcon={Close}
+              onClose={() => setPayOpen(false)}
+              closeOnEsc
+              center
+              closeOnOverlayClick={false}
+              styles={{
+                overlay: {
+                  height: "auto",
+                },
+              }}
+            >
+              <PaymentPage />
+            </Modal>
           </div>
           <div className="qHeader-rem">
             <div className="menu-container" ref={menuRef}>

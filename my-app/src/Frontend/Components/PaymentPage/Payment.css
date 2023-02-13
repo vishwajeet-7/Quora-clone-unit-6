@@ -1,13 +1,46 @@
-
-.three_box{
-    display:"flex";
-    margin:"auto";
+.three_box {
+  display: "flex";
+  margin: "auto";
 }
-.three_box div svg{
-    margin-right: 140px;
-    margin-top: 20px;
-    height: 35px;
-    width: 35px;
-    
+.three_box div svg {
+  margin-right: 140px;
+  margin-top: 20px;
+  height: 35px;
+  width: 35px;
+}
+.three_box div {
+  background-color: rgb(218, 217, 217);
+}
+.descvription_section {
+  justify-content: center;
+
+  width: 670px;
+  margin: auto;
+}
+.horizontal_line {
+  width: "400px";
+}
+.container {
+  width: 700px;
+  border: 1px solid black;
+  justify-self: center;
+  margin: auto;
+}
+.input_btn {
+  padding: 10px;
+  width: 630px;
+  margin-top: 7px;
+}
+.parag_raph {
+  color: #939598;
+  justify-content: none;
 }
 
+.blue_btn {
+  width: 600px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: blue;
+  margin-bottom: 10px;
+}

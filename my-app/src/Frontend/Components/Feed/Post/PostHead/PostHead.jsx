@@ -5,23 +5,17 @@ import "./PostHead.css";
 
 const PostHead = ({ author, date }) => {
   const theme = useSelector((store) => store.themereducer.theme);
-  const style = theme === "dark" ? { color: "var(--lightgrey)" } : {};
+  const style = theme === "dark" ? "postHead-dark" : "postHead";
+  const text = theme === "dark" ? "dark-h5" : "light-h5";
   return (
-    <div
-      className="postHead"
-      style={
-        theme === "dark"
-          ? { backgroundColor: "var(--darkComp)", border: "none" }
-          : {}
-      }
-    >
+    <div className={style}>
       <div className="avatar">
         <Avatar />
       </div>
       <div className="content">
         <div className="content-up">
           <div className="content-up text">
-            <h5 style={style}>{author}</h5>
+            <h5 className={text}>{author}</h5>
             <span>Follow</span>
           </div>
           <div className="content-remove">

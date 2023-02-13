@@ -2,22 +2,31 @@ import React from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import PopupCom from "./PopupCom";
+import Sidebar from "../Sidebar/Sidebar";
 
 const Spaces = () => {
   const gridChildStyle = {
     padding: "5px",
     boxShadow: "0 0 2px black",
-    width: "170px",
-    height: "230px",
+    // width: "170px",
+    // height: "230px",
     borderRadius: "20px",
     backgroundColor: "white",
   };
 
   return (
     <>
-      <div style={{ backgroundColor: "#e6e7e8" }}>
-        <div style={{ display: "flex", margin: "40px", gap: "10px" }}>
-          <div style={{ width: "30%" }}></div>
+      <div
+        style={{
+          // maginTop: "40px",
+          border: "1px solid white",
+          backgroundColor: "#e6e7e8",
+        }}
+      >
+        <div style={{ display: "flex", marginTop: "40px", gap: "10px" }}>
+          <div style={{ width: "20%", margin: "40px" }}>
+            <Sidebar />
+          </div>
 
           <div style={{ width: "60%" }}>
             <div>
@@ -31,16 +40,16 @@ const Spaces = () => {
                   backgroundColor: "white",
                 }}
               >
-                <div style={{ marginTop: "-15px" }}>
+                <div style={{}}>
                   <h4>Welcome to Spaces!</h4>
-                  <p style={{ font: "small-caption" }}>
+                  <p style={{ font: "small-caption", lineHeight: "3" }}>
                     Follow Spaces to explore your interests on Quora.
                   </p>
                   <button
                     style={{
-                      color: "blue",
                       padding: "5px",
                       border: "1px solid blue",
+                      color: "blue",
                       borderRadius: "20px",
                     }}
                   >
@@ -63,13 +72,12 @@ const Spaces = () => {
                   <img
                     style={{ borderRadius: "20px 20px 0 0" }}
                     src="https://quoraadsupport.zendesk.com/hc/article_attachments/360093561172/Quora_illustration_group.png"
-                    width="300px"
-                    height="120px"
+                    width="240px"
                   />
                 </div>
               </div>
             </div>
-            <div style={{}}>
+            <div style={{ lineHeight: "2" }}>
               <h4>Discover Spaces</h4>
               <p>Spaces you might like</p>
 
@@ -86,7 +94,7 @@ const Spaces = () => {
                     src="https://qph.cf2.quoracdn.net/main-custom-tc-1586844-320x64-nsfyvacbssszdtdnrrvofaorvgbvwgkl.jpeg"
                     alt=""
                     width="170px"
-                    height="70px"
+                    height="90px"
                   />
 
                   <h5>India Tourism</h5>
@@ -100,8 +108,8 @@ const Spaces = () => {
                     style={{ borderRadius: "20px 20px 0 0" }}
                     src="https://qph.cf2.quoracdn.net/main-custom-tc-1578131-320x64-pnzqpolqwcndyjzrliihipcjculwqfhg.jpeg"
                     alt=""
-                    width="170px"
-                    height="70px"
+                    // width="170px"
+                    // height="150px"
                   />
 
                   <h5>Trawellblogger's Guides</h5>
@@ -788,6 +796,7 @@ const Spaces = () => {
                 <hr />
 
                 <svg
+                  style={{ marginLeft: "90px" }}
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
