@@ -1,17 +1,14 @@
 import PostHead from "./PostHead/PostHead";
 import PostMid from "./PostMid/PostMid";
+import './Post.css'
 import { useSelector } from "react-redux";
 const Post = ({ item }) => {
   console.log(item);
   const theme = useSelector((store) => store.themereducer.theme);
+  const className = theme==='dark' ? "dark-post" : 'light-post'
   return (
     <div
-      className="post main"
-      style={
-        theme === "dark"
-          ? { backgroundColor: "var(--darkComp)", border: "none" }
-          : {}
-      }
+      className={className}
     >
       <div className="post__info">
         <PostHead author={item.author} date={item.date} />

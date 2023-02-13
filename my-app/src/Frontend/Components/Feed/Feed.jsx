@@ -13,7 +13,7 @@ const Feed = () => {
     .catch((e)=>{
       console.log(e);
     })
-  },[])
+  },[post])
   console.log(post);
   return (
     <div className='feed' >

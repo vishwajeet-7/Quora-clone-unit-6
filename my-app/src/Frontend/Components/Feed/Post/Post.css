@@ -1,130 +1,147 @@
-.post{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    background-color: white;
-    margin-top: 10px;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    max-width: 700px;
-    box-shadow: 0px 5px 8px -px solid rgba(0, 0, 0, 0.5);
+.light-post{
+    display: flex!important;
+    flex-direction: column!important;
+    padding: 10px!important;
+    background-color: white!important;
+    margin-top: 10px!important;
+    border: 1px solid lightgray!important;
+    border-radius: 5px!important;
+    max-width: 700px!important;
+    box-shadow: 0px 5px 8px -px solid rgba(0, 0, 0, 0.5)!important;
+}
+.dark-post{
+    display: flex!important;
+    flex-direction: column!important;
+    padding: 10px!important;
+    background-color: var(--darkComp);
+    margin-top: 10px!important;
+    border: var(--lightgrey);
+    border-radius: 5px!important;
+    max-width: 700px!important;
+    box-shadow: 0px 5px 8px -px solid rgba(0, 0, 0, 0.5)!important;
 }
 .main:hover{
-    border: 1px solid var(--grey);
+    border: 1px solid var(--grey)!important;
 }
 .post__info{
-    display: flex;
-    align-items: center;
+    display: flex!important;
+    align-items: center!important;
 }
 .post__info > h4{
-    margin-left: 10px;
-    cursor: pointer;
-    font-size: 13px;
+    margin-left: 10px!important;
+    cursor: pointer!important;
+    font-size: 13px!important;
 }
 .post__info > h4:hover{
-    text-decoration: underline;
+    text-decoration: underline!important;
 }
 .post__info> small{
-    margin-left: 10px;
+    margin-left: 10px!important;
 }
 .post__body{
-    display: flex;
-    flex-direction: column;
+    display: flex!important;
+    flex-direction: column!important;
 }
 .post__body > .post__question{
-    margin-top: 10px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    flex: 1;
+    margin-top: 10px!important;
+    font-weight: bold!important;
+    margin-bottom: 10px!important;
+    cursor: pointer!important;
+    display: flex!important;
+    align-items: center!important;
+    flex: 1!important;
 }
 .post__question > .post__btnAnswer{
-    margin-left: auto;
-    cursor: pointer;
-    padding: 7px;
-    background-color: blue;
-    outline: none;
-    border: none;
-    color: lightgray;
-    font-weight: 300;
-    font-size: 14px;
-    border-radius: 33px;
+    margin-left: auto!important;
+    cursor: pointer!important;
+    padding: 7px!important;
+    background-color: blue!important;
+    outline: none!important;
+    border: none!important;
+    color: lightgray!important;
+    font-weight: 300!important;
+    font-size: 14px!important;
+    border-radius: 33px!important;
 }
 .post__btnAnswer:hover{
-    text-decoration: underline;
+    text-decoration: underline!important;
 }
 .post__question>p:hover{
-    text-decoration: underline;
+    text-decoration: underline!important;
 }
 .post__body>.post__answer>p{
-    margin-bottom: 10px;
+    margin-bottom: 10px!important;
 }
 .post__footer {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-    justify-content: space-between;
+    display: flex!important;
+    align-items: center!important;
+    margin-top: 5px!important;
+    justify-content: space-between!important;
 }
 .post__footer > .MuiSvgIcon-root {
-    color: gray;
-    margin-right: 40px;
-    cursor: pointer;
+    color: gray!important;
+    margin-right: 40px!important;
+    cursor: pointer!important;
 }
 .post__footerAction {
-    padding: 5px;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    border-radius: 33px;
+    padding: 5px!important;
+    align-items: center!important;
+    display: flex!important;
+    justify-content: space-around!important;
+    border-radius: 33px!important;
     gap: 3rem;
 }
 .post__footerAction > .MuiSvgIcon-root {
-    color: gray;
-    margin-right: 40px;
-    cursor: pointer;
+    color: gray!important;
+    margin-right: 40px!important;
+    cursor: pointer!important;
 }
 .post__footerAction > .MuiSvgIcon-root:hover {
-    color: rgb(0, 140, 255);
-    margin-right: 40px;
+    color: rgb(0, 140, 255)!important;
+    margin-right: 40px!important;
 }
 .post__footerAction>div{
-    border-radius: 10px;
+    border-radius: 10px!important;
 }
 .post__footerAction>div:hover{
-    background-color: #ded1d1;
+    background-color: #ded1d1!important;
 }
 .post__footerAction>div>svg>path:hover{
-    fill: var(--blue);
+    fill: var(--blue)!important;
 }
+/* UPDATED */
+
+/* .main{
+    background: white!important;
+    padding: 10px!important;
+} */
 
 @media only screen and (max-width: 768px) {
     .post {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        background-color: white;
-        margin-top: 10px;
+        display: flex!important;
+        flex-direction: column!important;
+        padding: 10px!important;
+        background-color: white!important;
+        margin-top: 10px!important;
         margin-right: 0px;
-        border: 1px solid lightgray;
-        border-radius: 5px;
-        max-width: 500px;
-        box-shadow: 0px 5px 8px -px solid rgba(0, 0, 0, 0.5);
+        border: 1px solid lightgray!important;
+        border-radius: 5px!important;
+        max-width: 500px!important;
+        box-shadow: 0px 5px 8px -px solid rgba(0, 0, 0, 0.5)!important;
     }
 }
 @media only screen and (max-width: 400px){
     .post {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        background-color: white;
-        margin-top: 10px;
-        margin-right: 0px;
-        border: 1px solid lightgray;
-        border-radius: 5px;
-        max-width: 530px;
-        margin-left: -8px;
-        box-shadow: 0px 5px 8px -px solid rgba(0, 0, 0, 0.5);
+        display: flex!important;
+        flex-direction: column!important;
+        padding: 10px!important;
+        background-color: white!important;
+        margin-top: 10px!important;
+        margin-right: 0px!important;
+        border: 1px solid lightgray!important;
+        border-radius: 5px!important;
+        max-width: 530px!important;
+        margin-left: -8px!important;
+        box-shadow: 0px 5px 8px -px solid rgba(0, 0, 0, 0.5)!important;
     }
 }
