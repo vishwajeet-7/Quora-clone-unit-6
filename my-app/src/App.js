@@ -1,5 +1,5 @@
 import "./App.css";
-import Allroutes from "./Frontend/Routes/Allroutes";
+import Allroutes from "../src/Frontend/Routes/Allroutes";
 function App() {
   return (
     <div className="App">

@@ -6,6 +6,7 @@ import Quora from "../Components/Quora/Quora";
 import Answer from "../Components/AnswerPage/Answer/Answer";
 import SingleQuestion from "../Components/AnswerPage/SingleQuestion/SingleQuestion";
 import Spaces from "../Components/Spaces/Spaces";
+import Following from "../Components/Following/Following";
 
 function Allroutes() {
   return (
@@ -52,6 +53,17 @@ function Allroutes() {
             <>
               <QuoraHeader />
               <Spaces />
+            </>
+            // </PrivateRoute>
+          }
+        />
+        <Route
+          path="/following"
+          element={
+            // <PrivateRoute>
+            <>
+              <QuoraHeader />
+              <Following />
             </>
             // </PrivateRoute>
           }
