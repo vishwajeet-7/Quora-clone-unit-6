@@ -6,7 +6,6 @@ import Answer from "../Components/AnswerPage/Answer/Answer";
 import SingleQuestion from "../Components/AnswerPage/SingleQuestion/SingleQuestion";
 import Spaces from "../Components/Spaces/Spaces";
 import Following from "../Components/Following/Following";
-
 function Allroutes() {
   return (
     <div>
@@ -23,6 +22,7 @@ function Allroutes() {
             // </PrivateRoute>
           }
         />
+
         <Route
           path="/answer"
           element={
