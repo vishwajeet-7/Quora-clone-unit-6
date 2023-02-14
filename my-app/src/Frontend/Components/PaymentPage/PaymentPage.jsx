@@ -3,7 +3,7 @@ import "./Payment.css";
 import { Radio, RadioGroup, Stack } from "@chakra-ui/react";
 import { Input } from "@chakra-ui/react";
 
-import img from "../PaymentPage/Images";
+import img from "../PaymentPage/Images/-4-ans_frontend_assets.webp";
 import {
   Table,
   Thead,
