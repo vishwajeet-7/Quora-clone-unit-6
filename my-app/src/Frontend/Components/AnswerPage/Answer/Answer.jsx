@@ -22,7 +22,7 @@ function Answer() {
         <div className={styles.answerParent__content}>
           {/* left Side of the Page */}
           <div className={styles.left}>
-            <h3>Questions</h3>
+            <h1>Questions</h1>
             <ul>
               <li>Questions for you</li>
               <li>Answer requests</li>
@@ -60,7 +60,7 @@ function Answer() {
             </div>
             <div className={styles.addTopics}>
               <div>
-                <h3>Add 5 topics you know about</h3>
+                <h1>Add 5 topics you know about</h1>
                 <p>
                   You'll get better questions if you add more specific topics.
                 </p>

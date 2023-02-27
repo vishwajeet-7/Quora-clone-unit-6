@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 const Toggle = () => {
   // const dispatch = useDispatch()
-  const theme = useSelector((store) => store.theme);
+  const theme = useSelector((store) => store.themereducer.theme);
   return (
     <div className="toggle">
       <DarkModeIcon

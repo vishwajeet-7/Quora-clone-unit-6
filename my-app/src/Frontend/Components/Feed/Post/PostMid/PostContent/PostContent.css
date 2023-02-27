@@ -1,0 +1,7 @@
+.post-content-btn {
+  border: none !important;
+  color: var(--blue) !important;
+  background-color: transparent !important;
+  font-size: 15px !important;
+  font-weight: bold !important;
+}
